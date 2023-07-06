@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+    <!--Estilos CSS-->
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
+    <!--font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100&family=Kalam:wght@300;400;700&family=Montserrat:wght@700;900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+          <div class="logo"><img src="../img/One-Shot.svg" alt="logo"></div>
+          <ul class="nav-links">
+            <li><a href="../index.html">Inicio</a></li>
+            <li><a href="./about_me.html">Quienes somos</a></li>
+            <li><a href="./gallery.html">Galeria</a></li>
+            <li><a href="#">Contacto</a></li>
+          </ul>
+          <div class="navbar-mobile">
+            <div class="nav-links-mobile"><a href="#"><img src="../img/icon-profile.svg" alt="icon-profile"></a></div>
+            <div class="nav-links-mobile"><a href="#"><img src="../img/icon-cart.svg" alt="icon-cart"></a></div>
+            <div class="nav-links-mobile"><a href="#"><img src="../img/icon-menu.svg" alt="icon-menu"></a></div>
+          </div>
+        </nav>
+    </header>
+
+    <!--Seccion de formulario de contacto-->
+    <div class="form-container">
+        <form class="contact-form">
+            <h2 class="form-title">Contacto</h2>
+        
+            <div class="form-group">
+                <!-- <label for="name">Nombre:</label> -->
+                <input type="text" id="name" name="name" placeholder="Nombre" required>
+            </div>
+        
+            <div class="form-group">
+                <!-- <label for="email">Email:</label> -->
+                <input type="email" id="email" name="email" placeholder="Correo electronico" required>
+            </div>
+        
+            <div class="form-group">
+                <!-- <label for="comments">Comentarios:</label> -->
+                <textarea id="comments" name="comments" placeholder="Comentario" required ></textarea>
+            </div>
+        
+            <button type="submit">Enviar</button>
+        </form>
+    </div>
+
+    <!--Seccion de mapa-->
+    <div class="map-container">
+        <div class="title-container">
+            <svg xmlns="http://www.w3.org/2000/svg" width="34" height="34" viewBox="0 0 24 24"><path fill="currentColor" d="M12 11.5A2.5 2.5 0 0 1 9.5 9A2.5 2.5 0 0 1 12 6.5A2.5 2.5 0 0 1 14.5 9a2.5 2.5 0 0 1-2.5 2.5M12 2a7 7 0 0 0-7 7c0 5.25 7 13 7 13s7-7.75 7-13a7 7 0 0 0-7-7Z"/></svg>
+            <h1>¿Donde estamos?</h1>
+        </div>
+        
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.0684526441896!2d-58.38236992866422!3d-34.60243051856104!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccacebc81ca15%3A0xd26e8152f1b99d22!2sLavalle%20806%2C%20C1047AAR%20CABA!5e0!3m2!1ses-419!2sar!4v1688422128809!5m2!1ses-419!2sar" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+
+
+  <!--Footer-->
+  <footer class="footer">
+    <div class="logo-container">
+      <img src="../img/One-Shot.svg" alt="Logotipo">
+    </div>
+    <div class="email-container">
+      <input type="email" placeholder="Ingresa tu correo electrónico">
+      <button>Enviar</button>
+    </div>
+    <nav class="footer-nav">
+      <a href="./pages/gallery.html">Galeria</a>
+      <a href="./pages/about_me.html">Quienes somos</a>
+      <a href="./pages/contact.html">Contacto</a>
+    </nav>
+  </footer>
+</body>
+</html>

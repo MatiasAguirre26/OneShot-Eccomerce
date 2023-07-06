@@ -1,0 +1,320 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Inter', sans-serif;
+  font-family: 'Montserrat', sans-serif;
+  font-family: 'Kalam', cursive;
+}
+
+body {
+  background-color:#D8D8D8;
+}
+
+/*Barra de navegacion*/
+
+header {
+  background-color: #FAF4F4;
+  padding: 1rem;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-links {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+  
+}
+
+.nav-links li {
+  margin-right: 3rem;
+  
+}
+
+.nav-links li a{
+  text-decoration: none;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.navbar-mobile {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .nav-links {
+    display: none;
+  }
+
+  .navbar-mobile {
+    /* display: block; */
+    display: flex;
+    flex-direction: row;
+  }
+
+  .navbar-mobile .nav-links-mobile {
+    margin-left: 1.5rem;
+  }
+}
+
+/*Barra de navegacion*/
+
+/*Buscador*/
+.search-container {
+  display: flex;
+  justify-content: center; /* Ajusta la alineación horizontal del buscador */
+  align-items: center; /* Ajusta la alineación vertical del buscador */
+  /* background-color: #f2f2f2; */
+  padding: 1rem;
+  position: relative;
+}
+
+.search-input {
+  width: 100%; /* Ajusta el ancho del buscador */
+  padding: 10px;
+  border: 2px solid black;
+  outline: none;
+  padding-right: 40px; /*deja espacio para el botón dentro del campo de entrada*/
+}
+
+.search-button {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100%;
+  width: 80px; /* Ajusta el ancho del botón, para posicionar la ubicacion del boton */
+  background: transparent;
+  border: none;
+  outline: none;
+}
+
+/*Buscador*/
+
+/***Estilos page contact.html****/
+
+/*Contenedor del Titulo H1*/
+.title-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  text-transform: uppercase;
+  
+}
+
+.form-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2rem;
+}
+
+.contact-form {
+  background-color: #FAF4F4;
+  padding: 1rem;
+  border: 2px solid black;
+  display: flex;
+  flex-direction: column;
+  width: 40rem;
+  margin: 2rem;
+}
+
+.form-title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  text-transform: uppercase;
+}
+
+.form-group {
+  display: flex;
+  justify-content: center; /* Ajusta la alineación horizontal del buscador */
+  align-items: center; /* Ajusta la alineación vertical del buscador */
+  padding: 1rem;
+  position: relative;
+}
+
+.form-group input {
+  width: 100%; /* Ajusta el ancho del buscador según tus necesidades */
+  padding: 10px;
+  border: none;
+  border-bottom: 2px solid black;
+  outline: none;
+  padding-right: 40px; /*deja espacio para el botón dentro del campo de entrada*/
+  text-transform: uppercase;
+  font-weight: bold;
+  background-color: #FAF4F4;
+}
+
+.form-group textarea {
+  width: 100%; /* Ajusta el ancho del buscador según tus necesidades */
+  padding: 10px;
+  border: none;
+  border-bottom: 2px solid black;
+  outline: none;
+  padding-right: 40px; /*deja espacio para el botón dentro del campo de entrada*/
+  background-color: #FAF4F4;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.contact-form button {
+  background-color: #B40104;
+  padding: 10px;
+  border: none;
+  outline: none;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: white;
+}
+
+
+/*Estilos de las Cards*/
+
+.card {
+  width: 300px;
+  border: 3px solid black;
+  border-radius: 4px;
+  overflow: hidden;
+  background-color: #FAF4F4;
+  box-shadow: 0px 7px 7px 0px rgba(0, 0, 0, 0.25);
+}
+
+.card-image {
+  width: 100%;
+  height: auto;
+  border-bottom: 3px solid black;
+}
+
+.card-body {
+  padding: 10px;
+}
+
+.card-title {
+  font-size: 2rem;
+  margin-bottom: 5px;
+  text-transform: uppercase;
+}
+
+.card-price {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #B40104;
+}
+
+.card-button {
+  background-color: #B40104;
+  color: #fff;
+  border: none;
+  padding: 10px 10px;
+  border-radius: 4px;
+  cursor: pointer;
+  width: 100%;
+  font-size: 1rem;
+  text-transform: uppercase;
+  font-weight:bold;
+}
+
+
+.container-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 1rem;
+  margin: 10px;
+}
+
+
+.container-news > .title-container h1 {
+  background-color: #FAF4F4;
+  padding: 0.5rem;
+  border: 3px solid black
+}
+
+.container-news {
+  background-color: #B40104;
+  padding: 10px 0px;
+}
+
+/*Estilos de la pagina*/
+
+.container-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+  margin: 10px;
+}
+
+.gallery-image {
+  height: auto;
+  border-radius: 1rem;
+  width: 100%;
+  max-width: 30rem;
+}
+
+
+/*Estilos del footer*/
+
+.footer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: #FAF4F4;
+}
+
+.logo-container img {
+  max-width: 100%;
+  height: auto;
+}
+
+.email-container {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.email-container input{
+  padding: 5px;
+  width: 100%; /* Ajusta el ancho del buscador según tus necesidades */
+  padding: 10px;
+  border: none;
+  border-bottom: 2px solid black;
+  outline: none;
+  text-transform: uppercase;
+  font-weight: bold;
+  background-color: #FAF4F4;
+}
+
+.email-container button {
+  margin-left: 10px;
+  background-color: #B40104;
+  padding: 10px;
+  border: none;
+  outline: none;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: white;
+}
+
+.footer-nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.footer-nav a {
+  color: black;
+  text-decoration: none;
+  font-weight: bold;
+}
