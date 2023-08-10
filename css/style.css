@@ -11,66 +11,43 @@ body {
   background-color:#D8D8D8;
 }
 
-/*Barra de navegacion*/
+/*ESTILOS DE LA BARRA DE NAVEGACION*/
 
 header {
   background-color: #FAF4F4;
-  padding: 1rem;
 }
 
 .navbar {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.nav-links {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  list-style: none;
-  
-}
-
-.nav-links li {
-  margin-right: 3rem;
-  
+  padding: 30px 10px;
 }
 
 .nav-links li a{
   text-decoration: none;
   font-weight: bold;
   text-transform: uppercase;
+  color: #140000;
+  text-align: center;
 }
 
 .navbar-mobile {
   display: none;
 }
 
-@media (max-width: 768px) {
-  .nav-links {
-    display: none;
-  }
-
-  .navbar-mobile {
-    /* display: block; */
-    display: flex;
-    flex-direction: row;
-  }
-
-  .navbar-mobile .nav-links-mobile {
-    margin-left: 1.5rem;
-  }
+.navbar-toggler {
+  border: none;
+  outline: none;
+  padding: 0px;
 }
 
-/*Barra de navegacion*/
+.nav-item {
+  margin-right: 60px;
+}
 
 /*Buscador*/
 .search-container {
   display: flex;
   justify-content: center; /* Ajusta la alineación horizontal del buscador */
   align-items: center; /* Ajusta la alineación vertical del buscador */
-  /* background-color: #f2f2f2; */
   padding: 1rem;
   position: relative;
 }
@@ -94,19 +71,106 @@ header {
   outline: none;
 }
 
-/*Buscador*/
+/*ESTILOS DEL FOOTER*/
 
-/***Estilos page contact.html****/
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  background-color: #140000;
+  gap: 25px;
+}
 
-/*Contenedor del Titulo H1*/
+.logo-container img {
+  max-width: 100%;
+  height: auto;
+}
+
+.email-container {
+  display: flex;
+  align-items: center;
+  max-width: 100%;
+}
+
+.email-container input{
+  padding: 5px;
+  width: 100%; /* Ajusta el ancho del buscador según tus necesidades */
+  padding: 10px;
+  border: none;
+  outline: none;
+  font-weight: bold;
+  background-color: #FAF4F4;
+}
+
+.email-container button {
+  background-color: #B40104;
+  padding: 10px;
+  border: none;
+  outline: none;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: white;
+  border-radius: 0px 10px 10px 0px;
+  cursor: pointer;
+}
+
+.footer-nav {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.footer-nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.social-links {
+  display: flex;
+  gap: 30px; /* Ajusta el espacio entre los enlaces */
+}
+
+.social-links a {
+  font-size: 20px;
+  background-color: white;
+  color: black;
+  border-radius: 50px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px; /* Ajusta el ancho según tus necesidades */
+  height: 50px; /* Ajusta la altura según tus necesidades */
+  text-decoration: none;
+}
+
+.copyright {
+  color: white;
+  text-align: center;
+}
+
+footer h3 {
+  color: white;
+}
+
+
+
+
+
+/*ESTILOS DE LA PAGINA CONTACTO*/
+
 .title-container {
   display: flex;
   align-items: center;
   justify-content: center;
   padding: 1rem;
   text-transform: uppercase;
-  
+  text-align: center;
 }
+
+
 
 .form-container {
   display: flex;
@@ -137,29 +201,36 @@ header {
   display: flex;
   justify-content: center; /* Ajusta la alineación horizontal del buscador */
   align-items: center; /* Ajusta la alineación vertical del buscador */
-  padding: 1rem;
+  padding-bottom: 2rem;
   position: relative;
 }
 
 .form-group input {
   width: 100%; /* Ajusta el ancho del buscador según tus necesidades */
-  padding: 10px;
+  padding: 10px 0px 10px 0px;
   border: none;
   border-bottom: 2px solid black;
   outline: none;
-  padding-right: 40px; /*deja espacio para el botón dentro del campo de entrada*/
+  padding-left: 40px; /*deja espacio para el botón dentro del campo de entrada*/
   text-transform: uppercase;
   font-weight: bold;
   background-color: #FAF4F4;
 }
 
+.form-group svg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 60%;
+}
+
 .form-group textarea {
   width: 100%; /* Ajusta el ancho del buscador según tus necesidades */
-  padding: 10px;
+  padding: 10px 0px 10px 0px;
   border: none;
   border-bottom: 2px solid black;
   outline: none;
-  padding-right: 40px; /*deja espacio para el botón dentro del campo de entrada*/
+  padding-left: 40px; /*deja espacio para el botón dentro del campo de entrada*/
   background-color: #FAF4F4;
   text-transform: uppercase;
   font-weight: bold;
@@ -176,7 +247,7 @@ header {
 }
 
 
-/*Estilos de las Cards*/
+/*ESTILOS DE LA PAGINA INDEX*/
 
 .card {
   width: 300px;
@@ -241,10 +312,33 @@ header {
 
 .container-news {
   background-color: #B40104;
-  padding: 10px 0px;
+  padding-bottom: 3rem;
 }
 
-/*Estilos de la pagina*/
+/*divisor de novedades*/
+.custom-shape-divider-top-1690760178 {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+}
+
+.custom-shape-divider-top-1690760178 svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 60px;
+  transform: rotateY(180deg);
+}
+
+.custom-shape-divider-top-1690760178 .shape-fill {
+  fill: #D8D8D8;
+}
+
+
+
+/*ESTILOS DE LA PAGINA GALERIA*/
 
 .container-gallery {
   display: flex;
@@ -261,60 +355,66 @@ header {
   max-width: 30rem;
 }
 
+/*ESTILOS DE LA PAGINA LOGIN*/
+.background-login {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(0deg, rgba(255, 0, 0, 0.87) 0%, rgba(255, 0, 0, 0.87) 100%), url('../img/background.webp');
+  background-blend-mode: darken;
+  background-size: cover; /* Ajusta la imagen para cubrir todo el espacio sin repetirse */
+  background-position: center; /* Centra la imagen en el contenedor */
+  z-index: -1; /* Coloca la imagen de fondo detrás del contenido */
+}
 
-/*Estilos del footer*/
-
-.footer {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  align-items: center;
-  padding: 20px;
+/*ESTILOS DE LA PAGINA ABOUT_ME*/
+.background-about-me {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.87) 0%, rgba(255, 255, 255, 0.87) 100%), url('../img/background_about_me.webp');
+  background-blend-mode: darken;
+  background-size: cover; /* Ajusta la imagen para cubrir todo el espacio sin repetirse */
+  background-position: center; /* Centra la imagen en el contenedor */
+  z-index: -1; /* Coloca la imagen de fondo detrás del contenido */
+}
+.about_me {
   background-color: #FAF4F4;
+  padding: 50px;
+  margin: 60px auto;
+  border: 5px solid black;
 }
 
-.logo-container img {
-  max-width: 100%;
-  height: auto;
-}
 
-.email-container {
-  display: flex;
-  align-items: center;
-  margin-top: 10px;
-}
 
-.email-container input{
-  padding: 5px;
-  width: 100%; /* Ajusta el ancho del buscador según tus necesidades */
-  padding: 10px;
-  border: none;
-  border-bottom: 2px solid black;
-  outline: none;
-  text-transform: uppercase;
-  font-weight: bold;
-  background-color: #FAF4F4;
-}
 
-.email-container button {
-  margin-left: 10px;
-  background-color: #B40104;
-  padding: 10px;
-  border: none;
-  outline: none;
-  text-transform: uppercase;
-  font-weight: bold;
-  color: white;
-}
+/*MEDIA QUERIES*/
 
-.footer-nav {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 10px;
-}
+@media (max-width: 991px) {
 
-.footer-nav a {
-  color: black;
-  text-decoration: none;
-  font-weight: bold;
+  .nav-item {
+    background-color: #FAF4F4;
+    border: 5px solid black;
+    padding: 15px 0px;
+    margin-bottom: 25px;
+    text-align: center;
+    margin-right: 0px;
+  }
+
+  .offcanvas {
+    background: linear-gradient(180deg, #B40104 0%, rgba(180, 1, 4, 0.56) 100%);
+  }
+
+  .navbar-toggler:focus {
+    box-shadow:none;
+  }
+
+  .btn-close-vector{
+    background-color: transparent;
+    border: none;
+  }
 }

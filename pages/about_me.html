@@ -3,51 +3,107 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--META TAGS-->
+    <meta name=”keywords” content= “sobre-nosotros,equipo,historia,ecommerce-de-cómics,venta-de-mangas,misión,visión”>
+    <meta name="description" content="Descubre quiénes somos. Conoce nuestro equipo apasionado, nuestra historia en el mundo de los cómics y mangas, y nuestra visión de llevar la magia de estas historias a todos los amantes del género.">
     <title>Sobre nosotros</title>
+    <!--CDN Bootstrap 5-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
     <!--Estilos CSS-->
     <link rel="stylesheet" type="text/css" href="../css/style.css">
     <!--font-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100&family=Kalam:wght@300;400;700&family=Montserrat:wght@700;900&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!--Font awesome 4.7.0-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!--CDN Animate.Style-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
 </head>
 <body>
-    <header>
-        <nav class="navbar">
-          <div class="logo"><img src="../img/One-Shot.svg" alt="logo"></div>
-          <ul class="nav-links">
-            <li><a href="../index.html">Inicio</a></li>
-            <li><a href="#">Quienes somos</a></li>
-            <li><a href="./gallery.html">Galeria</a></li>
-            <li><a href="./contact.html">Contacto</a></li>
-          </ul>
-          <div class="navbar-mobile">
-            <div class="nav-links-mobile"><a href="#"><img src="../img/icon-profile.svg" alt="icon-profile"></a></div>
-            <div class="nav-links-mobile"><a href="#"><img src="../img/icon-cart.svg" alt="icon-cart"></a></div>
-            <div class="nav-links-mobile"><a href="#"><img src="../img/icon-menu.svg" alt="icon-menu"></a></div>
+  <!--HEADER-->
+  <header>
+    <nav class="navbar navbar-expand-lg">
+      <div class="container-fluid">
+        <a href="../index.html"><img src="../img/One-Shot.svg" alt="logo"></a>
+        <div>
+          <a href="./login.html" class="d-lg-none me-3"><img src="../img/icon-profile.svg" alt="user icon"></a>
+          <a href="./pages/cart.html" class="d-lg-none me-3"><img src="../img/icon-cart.svg" alt="cart icon"></a>
+          <button class="navbar-toggler btn-hamburguer" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+            <img src="../img/icon-menu.svg" alt="icon-menu">
+          </button>
+        </div>
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+          <div class="offcanvas-header d-flex align-items-end flex-column d-lg-none">
+            <button type="button" class="btn-close-vector" data-bs-dismiss="offcanvas" aria-label="Close">
+              <img src="../img/icon-cross-white.svg" alt="icon-menu">
+            </button>
           </div>
-        </nav>
-    </header>
+          <div class="offcanvas-body">
+            <ul class="navbar-nav justify-content-end flex-grow-1 nav-links">
+              <li class="nav-item">
+                <a href="../index.html">Inicio</a>
+              </li>
+              <li class="nav-item">
+                <a href="../pages/about_me.html">Quienes somos</a>
+              </li>
+              <li class="nav-item">
+                <a href="../pages/gallery.html">Galeria</a>
+              </li>
+              <li class="nav-item">
+                <a href="../pages/contact.html">Contacto</a>
+              </li>
+              <li class="nav-item d-none d-lg-block">
+                <a href="./login.html"><img src="../img/icon-profile.svg" alt="profile icon"></a>
+              </li>
+              <li class="nav-item d-none d-lg-block">
+                <a href="./pages/cart.html"><img src="../img/icon-cart.svg" alt="cart icon"></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <!--HEADER-->
 
-    <div class="title-container">
-      <h1>Sobre nosotros</h1>
+  <!--MAIN-->
+  <main>
+    <div class="background-about-me"></div>
+    <div class="container about_me animate__animated animate__jackInTheBox">
+      <h1 class="text-uppercase fw-bold text-center">Sobre nosotros</h1>
+      <p class="fs-3">En One Shot!, estamos apasionados por los cómics y los mangas. Desde nuestra fundación, nos hemos dedicado a llevar la magia de estas narrativas visuales a todos los amantes de estas historias únicas y cautivadoras. Nuestra misión es simple pero poderosa: queremos ser la plataforma definitiva para todos los amantes de los cómics y los mangas. Queremos ofrecer una amplia gama de títulos, desde los clásicos más queridos hasta las últimas novedades, y hacer que sea fácil para ti explorar y encontrar exactamente lo que estás buscando.
+
+        Nuestra visión es construir una comunidad donde los amantes de los cómics y los mangas puedan conectarse, compartir sus opiniones y descubrir nuevas historias juntos. Queremos ser más que una tienda en línea; queremos ser un destino donde puedas sumergirte en el fascinante mundo de estas narrativas visuales.</p>
     </div>
-    <iframe width="100%" height="615" src="https://www.youtube.com/embed/b6Ll8ltC67I" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+  </main>
+  <!--MAIN-->
 
-  <!--Footer-->
+  <!--FOOTER-->
   <footer class="footer">
     <div class="logo-container">
-      <img src="../img/One-Shot.svg" alt="Logotipo">
+      <img src="../img/One-Shot_logo-white.svg" alt="Logotipo_white">
     </div>
+    <h3>Recibí todas las novedades</h3>
     <div class="email-container">
-      <input type="email" placeholder="Ingresa tu correo electrónico">
-      <button>Enviar</button>
+      <input type="email" placeholder="Correo electrónico">
+      <button>Suscribirse</button>
     </div>
     <nav class="footer-nav">
-      <a href="./pages/gallery.html">Galeria</a>
-      <a href="./pages/about_me.html">Quienes somos</a>
-      <a href="./pages/contact.html">Contacto</a>
+      <a href="../pages/gallery.html">Galeria</a>
+      <a href="../pages/about_me.html">Quienes somos</a>
+      <a href="../pages/contact.html">Contacto</a>
     </nav>
+    <div class="social-links">
+      <a href="#"><i class="fa fa-twitter"></i></a>
+      <a href="#"><i class="fa fa-instagram"></i></a>
+      <a href="#"><i class="fa fa-facebook"></i></a>
+    </div>
+    <p class="copyright">© All rights reserved. Made by One Shot!</p>
   </footer>
+  <!--FOOTER-->
+
+  <!--CDN Script Bootstrap 5-->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
 </body>
 </html>
